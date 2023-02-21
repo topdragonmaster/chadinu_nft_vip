@@ -1,0 +1,68 @@
+#avatar-container, .avatar-wrapper, .button-group {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.avatar-wrapper {
+    margin-top: 3rem;
+}
+
+#avatar-container {
+    background-color: grey;
+}
+#avatar-container > div > img {
+    width: 400px;
+    height: 635px;
+}
+
+@media screen and (max-width: 414px) { 
+    .avatar-wrapper {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    #avatar-container > div > img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.qr-wrapper {
+    position: absolute;
+    top: 62.5%;
+    width: 63px;
+    height: 63px;
+}
+
+.qr-component {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+}
+#qr-canvas {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    opacity: 0.7;
+    margin-top: 2px; 
+    margin-left: 2px;
+    /* background-color: #c4cdb5; */
+}
+
+.user-id-text {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: MyFont;
+    font-size: 1.8rem;
+    top: 77.8%;
+    color: #c4bdb5;
+    opacity: 0.9;
+}
+

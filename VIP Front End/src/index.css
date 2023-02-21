@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'MyFont';
+  src: local('MyFont'), url(assets/fonts/telegrama_render.otf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: local('Oswald'), url(assets/fonts/Oswald-Regular.ttf) format('truetype');
+}
+
+body {
+  font-size: 16px !important;
+  /* background: url(./assets/img/body-background.png); */
+  /* color: rgb(52, 71, 103); */
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #101c35 4.5%, rgb(0, 0, 0) 32%) !important;
+  color: white !important;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Oswald' !important;
+  color: white !important;
+}

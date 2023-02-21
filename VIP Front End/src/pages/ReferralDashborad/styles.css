@@ -1,0 +1,82 @@
+.card-view {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.mymodal {
+  position: fixed;
+  width: 445px;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: 1px solid #ccc;
+  background: black;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+}
+
+@media screen and (max-width: 535px) { 
+  .mymodal {
+    width: 100%;
+  }
+}
+
+.myoverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+
+.icon {
+  fill: #007EFF;
+  stroke: white;
+  font-size: 3em;
+  float: right;
+  position: absolute;
+  top: 5px;
+  right: 25px;
+}
+
+.icon :hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.usercode-text {
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-family: "Os";
+  font-family: 'Oswald' !important;
+}
+
+@media screen and (max-width: 770px) { 
+  .usercode-text {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,48 @@
+.tooltip {
+    position: relative !important;
+    opacity: 1 !important;
+    border-radius: 5px;
+    width: 37px;
+    height: 37px;
+    z-index: 0!important;
+    cursor: pointer;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 86px;
+    color: black;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 0!important;
+    bottom: 130%;
+    left: 50%;
+    margin-left: -43px;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .copy-button {
+    padding-top: 6px;
+    padding-left: 6px;
+  }
+
+  .copy-button :hover {
+    cursor: pointer;
+  }
